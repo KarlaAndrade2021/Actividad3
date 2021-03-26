@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        *{margin:1;padding:0;}
+        html{background-color: darkslateblue;}
+        body{width:900px;height:2250px;background-color:mediumpurple; margin:auto;}
+        header{width:900px;height:100px;background-color: rgba(0, 250, 154, 0.822);}
+        nav{width:900px;height:20px;background-color:steelblue;}
+        main{width:900px;height:2220px;background-color: rgb(241, 138, 241);}
+        footer{width:900px;height:30px;background-color:yellow; margin:auto;}
+        aside#left{width:250px;height:2220px;float:left;background-color:white;}
+        article{width:650px;height:600px;float: left;}
+        li{float: left;}
+        li a{display: block;color:darkslategrey; text-align: center;padding:15px 18px 15px 18px; font-size:20px;}
+        p{text-align: justify;}
+        img{margin:auto;display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <section id="banner">
+            <ul>
+                <li><a class="active" href="EstructuraCSS.html">Estructura de CSS</a></li>
+                <li><a class="active" href="AlinearTexto.html">Alineacion de texto</a></li>
+                <li><a class="active" href="index.html">Color en CSS</a></li>
+                <li><a class="active" href="index.html">Bordes</a></li>
+                <li><a class="active" href="index.html">Sombreado</a></li>
+                <li><a class="active" href="index.html">Establecer Fondos</a></li>
+            </ul>
+        </section><br><br>
+        <h2>Introducción a CSS</h2>
+    </header>
+    <nav></nav>
+    <main>
+        
+        <aside id="left">
+            <img src=Logo-Usac.jpg width="250" height="250">
+            <img src=Logo-Efpem.jpg width="250" height="300">
+        </aside>
+        <!--Contenido de investigacion-->
+        <article>
+            <h3>¿Qué es CSS y para qué sirve?</h3>
+            <p>La solución vino de la mano de CSS,un lenguaje de marcas enfocado a definir, crear y 
+            mejorar la presentación de un documento basado en HTML. Para muchos diseñadores 
+            gráficos CSS significó la puerta de entrada al mundo de la web y junto con otras 
+            tecnologías como JavaScript, CSS se ha ido imponiendo como uno de los pilares 
+            imprescindibles de la web de hoy en día. </p><br>
+            <h3>¿Qué significan las siglas del acrónimo CSS</h3>
+            <p>CSS, siglas en inglés de Cascading Style Sheets, en español "Hojas de estilo en cascada"</p><br>
+            <h3>Breve historia de CSS</h3>
+            <p>CSS se creó para cubrir la necesidad de definir un mecanismo que permitiera aplicar 
+            diferentes estilos a los documentos. Este lenguaje se impulsó con el crecimiento del 
+            lenguaje HTML. La guerra de navegadores y la falta de un estándar que definiera los estilos, 
+            dificultaba la creación de documentos con la misma apariencia en diferentes navegadores. 
+            El organismo W3C (World Wide Web Consortium) es el encargado de crear los estándares  
+            relacionados con programación Web, se le propusieron varias propuestas de hojas de estilo. 
+            Las dos propuestas que se tuvieron en cuenta son: CHSS (Cascading HTML Style Sheets) y 
+            SSP (Stream-based Style Proposal). Estas dos propuestas se unieron entre 1994 y 1995 por 
+            Håkon Wium Lie  y Bert Bos y definieron un lenguaje con lo mejor de cada una este fue llamado CSS.
+            En 1995, W3C aposto por este lenguaje y lo estandarizo. En 1998 se publicó la segunda versión de 
+            este lenguaje que fue llamada CSS nivel2. Es la versión que se utiliza actualmente en los navegadores. 
+            Y ese mismo año se empezó con el desarrollo de CSS nivel 3 que continua en desarrollo actualmente, 
+            solo se han publicado borradores.</p><br>
+            <h3>Formas de aplicar CSS</h3>
+            <p>Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores web 
+            cuando no hay estilos especificados, así como que podemos embeber código CSS en las propias etiquetas de 
+            HTML. La manera de aplicar los estilos en CSS son los siguiente:<br>
+           <br>a.	CSS en línea<br>
+
+            Los estilos en línea son declaraciones CSS que se integran en las etiquetas HTML mediante el atributo style.
+            Este método tan solo afecta al elemento en el que se integra el código.Ejemplo:<br>
+            <img src="style1.png" width="350" height="350"><br><br>
+            b.	CSS interno<br>
+
+            Otra manera muy simple de añadir estilo con CSS es utilizando la etiqueta style en la cabecera head
+            del fichero HTML del sitio. Ejemplo:<br>
+            <img src="style2.png" width="350" height="350"><br><br>
+            c.	CSS externo<br>
+
+            Mediante hojas de estilo externas se consigue separar el archivo de estilos del fichero HTML. 
+            El archivo de estilos cuenta con la extensión .css y se referencia desde HTML mediante el elemento link. 
+            Este es el método recomendado para aplicar estilos a una página web. Ejemplo:<br>
+            <img src="style3.png" width="350" height="350"><br><br>
+            </p><br>
+            <h3>Que es un comentario y como se escribe en CSS</h3>
+            <p>Los comentarios son usados para añadir notas explicatorias o prevenir que el navegador interprete 
+                partes de la hoja de estilos. Los comentarios se pueden colocar en cualquier espacio en blanco que
+                se permita en la hoja de estilos. Se escriben de la siguiente manera:<br>
+                /* Comentario */
+                </p><br>
+        </article>
+        
+    </main>
+    <footer>
+        <p><b>Creado por: Karla Marlen Andrade Zuleta, carnet: 2007-15060</b></p>
+    </footer>
+
+</body>
+</html>

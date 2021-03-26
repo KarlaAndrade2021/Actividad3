@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estructura CSS</title>
+    <style>
+        *{margin:1;padding:0;}
+        html{background-color: darkslateblue;}
+        body{width:900px;height:2150px;background-color:mediumpurple; margin:auto;}
+        header{width:900px;height:100px;background-color: rgba(0, 250, 154, 0.822);}
+        nav{width:900px;height:20px;background-color:steelblue;}
+        main{width:900px;height:2050px;background-color: rgb(241, 138, 241);}
+        footer{width:900px;height:30px;background-color:yellow; margin:auto;}
+        aside#left{width:250px;height:2050px;float:left;background-color:white;}
+        article{width:650px;height:600px;float: left;}
+        li{float: left;}
+        li a{display: block;color:darkslategrey; text-align: center;padding:15px 18px 15px 18px; font-size:20px;}
+        p{text-align: justify;}
+        img{margin:auto;display: block;}
+    </style>
+</head>
+<body>
+    <header>
+        <section id="banner">
+            <ul>
+                <li><a class="active" href="index.html">Inicio</a></li>
+                <li><a class="active" href="AlinearTexto.html">Alineacion de texto</a></li>
+               
+        </section>
+        <h2>Estructuras de CSS</h2>
+    </header>
+    <nav></nav>
+    <main>
+        
+        <aside id="left">
+            <img src=Logo-Usac.jpg width="250" height="250">
+            <img src=Logo-Efpem.jpg width="250" height="300">
+        </aside>
+        <!--Contenido de investigacion-->
+        <article>
+            <p>a.	Selector <br>
+                Un selector CSS se puede definir como el código que identifica a uno o varios elementos HTML 
+                para aplicarle estilos de color, tamaño, separación, etc.<br><br>
+                b.	Propiedad <br>
+                Se puede tomar como la acción a realizar al momento de utilizar el selector.<br><br>
+                c.	Valor<br>
+                Como su nombre lo dice es la característica que se le da a la propiedad del selector.<br>
+                 </p><br><br>
+            <h3>Tipos de selectores</h3><br>
+            <p>
+            1. Selector universal<br>
+                Sintaxis: * { atributo:valor; }<br> 
+                Ejemplo:* { color: grey; }.<br>El estilo se aplicará a todos los elementos de la página.<br>
+            <br>2. Selector etiqueta<br>
+                Sintaxis: etiqueta { atributo:valor }<br> 
+                Ejemplo: p {color: green;}.<br>El estilo se aplicará a todos los elementos del parrafo.
+            <br><br>3. Selector clase<br>
+                Sintaxis: .clase { atributo:valor }<br>
+                Ejemplo: .index {color: red;}<br>El estilo se aplicará a cualquier elemento que tenga la clase .index
+            <br><br>4. Selector identificador<br>
+                El selector identificador utiliza el atributo id para seleccionar un elemento. Solo puede haber un elemento con un id dado en un documento.<br>
+                Sintaxis: #id { atributo:valor }<br>
+                Ejemplo: #cent {color: blue;}<br>El estilo se aplicará al elemento que tenga el id #cent
+            <br><br>5. Selector descendiente<br>
+                Un elemento es descendiente de otro cuando se encuentra entre las etiquetas de apertura y de cierre del elemento padre. <br>
+                Su sintaxis es: selector1 selector2… slectorN. Siendo el selector N el elemento sobre el que se aplica el estilo.
+                selector1 selector2 selectorN{propiedad: valor;}
+            <br><br>6. Combinación de selectores<br>
+                La combinación de selectores nos permite dar un estilo a todos los selectores indicados.
+                selector1, selector2, selector3{propiedad: valor;}
+            <br><br>7. Selector de hijos<br>
+                Se usa para seleccionar un elemento que es hijo de otro elemento y se indica mediante el signo “mayor que” (>).
+                selector1 > selector2{propiedad: valor;}
+            </p><br><br>
+            <h3>Elementos de linea y elementos de bloque</h3>
+            <p>
+                Elementos de Línea<br>
+                Los elementos en HTML  usualmente son elementos en línea. Un elemento en línea ocupa sólo el espacio delimitado por las etiquetas que definen el elemento en línea. El siguiente ejemplo demuestra la influencia de los elementos en línea:
+                <br><br>HTML<br>
+                Este <span>span</span> es un elemento en línea; este fondo se ha coloreado para mostrar el principio y fin de la influencia del elemento en línea
+
+                <br>CSS<br>
+                span { background-color: #8ABB55; }<br>
+                <img src="Elinea.png" width="500" height="100"><br><br>
+                Elemento de Bloque<br>
+                Los elementos, en HTML usualmente son elementos en bloque. Un elemento en bloque ocupa todo el espacio de su elemento padre (contenedor), creando así un bloque. 
+                Los navegadores suelen mostrar el elemento a nivel de bloque con un salto de línea antes y después del elemento. El siguiente ejemplo demuestra la influencia elementos en bloque:
+
+                <br>HTML<br>
+                Este párrafo es un elemento en bloque; este fondo se ha coloreado para mostrar elemento principal (o padre) del párrafo.
+
+                <br>CSS<br>
+                p { background-color: #8ABB55; }
+                <img src="Ebloque.png" width="500" height="100"><br><br>
+            
+            <h3>¿Qué es el modelo de caja en CSS?</h3>
+            <p>
+                Cada elemento que encontramos dentro de un documento HTML se encuentra contenido en una caja rectangular, la cual cuenta con una serie de propiedades que afectaran el cómo se muestran los elementos.<br>
+                Al trabajar con un modelo de caja, debemos tener en cuenta que existen dos propiedades principales para definirla, height y width, que definirán el ancho y alto de nuestra caja.<br>
+                Adicionalmente a estas, tenemos el Margin, Padding y Border que nos brindaran mayor control al momento de organizar los elementos.<br>
+                <img src="Mcaja.jpg" width="500" height="150"><br><br>
+            </p>
+        </p><br> 
+          
+
+        </article>
+        
+    </main>
+    <footer>
+        <p><b>Creado por: Karla Marlen Andrade Zuleta, carnet: 2007-15060</b></p>
+    </footer>
+
+</body>
+</html>
